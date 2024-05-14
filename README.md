@@ -14,3 +14,4 @@ Esse projeto foi desenvolvido durante as aulas ministradas no SENAI.
 * Google Fonts
 
 ## Layout do Projeto
+![](previa.PNG)
