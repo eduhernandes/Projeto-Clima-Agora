@@ -72,7 +72,7 @@ const showWeatherData = async(city) => {
 const hideInformation = () => {
     errorMessageContainer.classList.add("hide");
     weatherData.classList.add("hide");
-  
+    document.body.style.backgroundImage = "linear-gradient(180deg,#594cee 0%,#8dd0f5 100%)";
   };
 
 // Tratamento de erro
