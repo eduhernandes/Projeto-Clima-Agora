@@ -2,9 +2,9 @@
 //Variáveis e seleções de elementos
 const apiKey = "b35a625873a7eb5b071cf6a5810a901d";
 const apiUnsplash = "https://source.unsplash.com/1600x900/?";
+
 const cityInput = document.querySelector("#city-input");
 const searchBt = document.querySelector("#search");
-
 const cityElement  = document.querySelector("#city");
 const tempElement  = document.querySelector("#temperature span");
 const descElement  = document.querySelector("#description");
@@ -12,12 +12,9 @@ const weatherIconElement  = document.querySelector("#weather-icon");
 const countryElement  = document.querySelector("#country");
 const humidityElement  = document.querySelector("#humidity span");
 const windElement = document.querySelector("#wind span");
-
 const weatherData = document.querySelector("#weather-data");
-
 const errorMessageContainer = document.querySelector("#error-message");
 const loader = document.querySelector("#loader");
-
 const cityErrorElment = document.querySelector("#error-message span")
 
 //Funções
@@ -54,6 +51,7 @@ const showWeatherData = async(city) => {
         return
     }
 
+    //Substituindo os elementos HTML
     cityElement.innerText = data.name;
     tempElement.innerText = parseInt(data.main.temp);
     descElement.innerText = data.weather[0].description;
@@ -65,6 +63,7 @@ const showWeatherData = async(city) => {
     // Altera a imagem de fundo
     document.body.style.backgroundImage = `url("${apiUnsplash + city}")`;
 
+    //Remove a class hide para exibir os dados do clima
     weatherData.classList.remove("hide");
 };
 
@@ -82,12 +81,14 @@ const showErrorMessage = (city) => {
   };
 
 //Eventos
+//Evento ao pressionar o botão de busca
 searchBt.addEventListener("click", (e) => {
     e.preventDefault(); //evita o envio do formulário
     const city = cityInput.value;
     showWeatherData(city);
 });
 
+//Evento ao pressionar Enter
 cityInput.addEventListener("keyup", (e) => {
     if (e.code === "Enter") {
       const city = e.target.value;
