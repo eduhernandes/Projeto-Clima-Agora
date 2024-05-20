@@ -14,8 +14,8 @@ Esse projeto foi desenvolvido durante as aulas ministradas no SENAI.
 * Google Fonts
 
 ## Layout do Projeto
-**Tela Inicial**
-![](img/previa1.PNG)
+**Tela Inicial**<br>
+![](img/previa0.PNG)
 
 **Cidade Encontrada**
 ![](img/previa1.PNG)
@@ -24,5 +24,5 @@ Esse projeto foi desenvolvido durante as aulas ministradas no SENAI.
 ![](img/previa2.PNG)
 
 ## Autor do Projeto
-**Eduardo Hernandes**
-contato: <a href="mailto:prof.eduardo.hernndes@gmail.com">prof.eduardo.hernndes@gmail.com</a>
+**Eduardo Hernandes**<br>
+<a href="mailto:prof.eduardo.hernandes@gmail.com">prof.eduardo.hernandes@gmail.com</a>
